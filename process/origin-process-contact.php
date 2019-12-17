@@ -2,7 +2,7 @@
  
     require ("class.phpmailer.php");
  
-    if(isset($_POST['submit_contact'])){
+    if(isset($_POST['name'])){
         $name=$_POST['name']; // Get Name value from HTML Form
         $email=$_POST['mail'];  // Get Email Value
         $message=$_POST['comment']; // Get Message Value
