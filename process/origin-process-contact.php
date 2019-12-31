@@ -15,12 +15,12 @@
          
         $mail->SMTPAuth = true;
         $mail->Port = 587;
-        $mail->Username = "diahshintad@gmail.com"; // Your Email ID
-        $mail->Password = "waterlotus098"; // Password of your email id
+        $mail->Username = "sender.thewaltersuit@gmail.com"; // Your Email ID
+        $mail->Password = "pengirimemail"; // Password of your email id
          
         $mail->From ($email);
         $mail->FromName ($name);
-        $mail->AddAddress ("diahshintad@gmail.com"); // On which email id you want to get the message
+        $mail->AddAddress ("sender.thewaltersuit@gmail.com"); // On which email id you want to get the message
         $mail->AddCC ($email);
          
         $mail->IsHTML(true);

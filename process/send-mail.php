@@ -40,13 +40,13 @@ if(isset($_POST['name'])){
     //Whether to use SMTP authentication
     $mail->SMTPAuth = true;
     //Username to use for SMTP authentication - use full email address for gmail
-    $mail->Username = 'diahshintad@gmail.com';
+    $mail->Username = 'sender.thewaltersuit@gmail.com';
     //Password to use for SMTP authentication
-    $mail->Password = 'waterlotus098';
+    $mail->Password = 'pengirimemail';
     //Set who the message is to be sent from
-    $mail->setFrom('diahshintad@gmail.com', 'First Last');
+    $mail->setFrom('sender.thewaltersuit@gmail.com', 'First Last');
     //Set an alternative reply-to address
-    $mail->addReplyTo('diahshintad@gmail.com', 'First Last');
+    $mail->addReplyTo('sender.thewaltersuit@gmail.com', 'First Last');
     //Set who the message is to be sent to
     $mail->addAddress($email, 'John Doe');
     //Set the subject line

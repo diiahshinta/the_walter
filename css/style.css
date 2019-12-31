@@ -224,6 +224,7 @@ div.megadrop.five-col {
 }
 li.drop-arrow:hover .megadrop {
   visibility: visible;
+  margin-top: 10px;
   opacity: 1;
 }
 header.transparent-style .navbar-default {
@@ -527,14 +528,14 @@ p {
   margin: 0 0 10px;
 }
 #content .tp-caption.NotGeneric-Title {
-  font-size: 60px;
+  font-size: 35px;
   font-weight: 400 !important;
   color: #fff;
   font-family: 'Yesteryear', cursive;
   letter-spacing: inherit;
 }
 #content .tp-caption.NotGeneric-SubTitle {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Roboto', sans-serif !important;
   font-weight: 400;
   line-height: 24px;
@@ -3357,9 +3358,9 @@ section.story-skills-section .story-skills-box .clients-box ul.client-list li a:
   -o-background-size: cover;
 }
 section.about-banner-section {
-  padding: 100px 0px;
-  background-size: cover;
-  -webkit-background-size: cover;
+  padding: 0px 0px 100px 0px;
+  background-size: auto;
+  -webkit-background-size: auto;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
@@ -3370,7 +3371,7 @@ section.about-banner-section .about-banner-box h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5px;
-  line-height: 90px;
+  line-height: 45px;
   margin: 0 0 20px;
 }
 section.about-banner-section .about-banner-box h2 {
@@ -3387,7 +3388,6 @@ section.about-banner-section .about-banner-box h2 {
   line-height: 42px;
   font-weight: 700;
   letter-spacing: 2.5px;
-  margin-left: 5px;
 }
 section.about-banner-section .about-banner-box p {
   margin: 15px 0;
@@ -4211,12 +4211,6 @@ section.services-section3 .services-box .services-post div.hover-box p {
   display: none;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
 /*-------------------------------------------------*/
 /* =  contact page
 /*-------------------------------------------------*/
@@ -4229,22 +4223,19 @@ section.contact-section {
 section.contact-section .map-holder {
   width: 50%;
   float: left;
-  height: relative;
-  weight: relative;
+  position: center;
+  height: auto;
   display: block;
   padding-left: 100px;
   padding-top: 100px;
-}
-section.contact-section .map-holder #map {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
 section.contact-section .contact-form-part {
   float: left;
   padding: 100px 0 100px 100px;
   position: center;
   width: 50%;
+  max-width: 100%;
 }
 section.contact-section .contact-form-part h1 {
   color: #222222;
@@ -4349,12 +4340,12 @@ form#review-form input[type="submit"]:hover {
 }
 .contact-section.second-style .map-holder {
   width: 100%;
-  float: none;
-  height: 600px;
+  height: auto;
 }
 .contact-section.second-style .contact-form-part {
   float: none;
   max-width: 100%;
+  position: center;
   padding: 100px 0;
 }
 .contact-section.second-style .contact-form-part form#contact-form {
@@ -5538,6 +5529,12 @@ footer ul.social-icons li a:hover {
 footer ul.social-icons li a:hover:after {
   width: 100%;
 }
+.center {
+  margin: auto;
+  width: auto;
+  padding: 10px;
+}
+
 .container {
   max-width: 100%;
 }
@@ -5586,7 +5583,7 @@ footer ul.social-icons li a:hover:after {
     padding-top: 80px;
   }
   section.contact-section .contact-form-part {
-    max-width: 500px;
+    max-width: 100%;
   }
   .blog-section.standart.split-style .journal .hover-box h1 {
     font-size: 70px;
@@ -5616,7 +5613,8 @@ footer ul.social-icons li a:hover:after {
     margin-bottom: 30px;
   }
   .contact-section.second-style .map-holder {
-    height: 300px;
+    height: auto;
+	width: 100%;
   }
   .blog-section .blog-box .blog-post .post-content h2,
   .blog-section .blog-box .blog-post.quote-post h2 {
@@ -5674,10 +5672,9 @@ footer ul.social-icons li a:hover:after {
     font-size: 24px;
   }
   section.about-banner-section {
-    padding: 200px 0;
   }
   section.contact-section .contact-form-part {
-    max-width: 400px;
+    max-width: 100%;
     padding-left: 30px;
   }
   .checking-form .table td button,
@@ -5797,7 +5794,7 @@ footer ul.social-icons li a:hover:after {
     top: inherit;
   }
   div#container.vertical-header div.megadrop h2 {
-    display: none;
+    display: block;
   }
   div#container.vertical-header div.megadrop ul {
     margin-bottom: 10px;
@@ -5846,8 +5843,6 @@ footer ul.social-icons li a:hover:after {
     margin-bottom: 30px;
   }
   section.about-banner-section {
-	  
-    padding: 0 100px;
     text-align: left;
   }
   section.about-banner-section .about-banner-box p {
@@ -5858,10 +5853,12 @@ footer ul.social-icons li a:hover:after {
   }
   section.contact-section .map-holder {
     width: 100%;
-    height: 300px;
+    height: auto;
+	padding: 0;
+	text-align: center;
   }
   section.contact-section .contact-form-part {
-    max-width: 100%;
+    width: 100%;
     padding: 40px 0;
   }
   .contact-info-section {
@@ -5942,7 +5939,7 @@ footer ul.social-icons li a:hover:after {
     background: #;
   }
   div.megadrop h2 {
-    display: none;
+    display: block;
   }
   div.megadrop ul {
     margin-bottom: 10px;
